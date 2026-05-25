@@ -1,12 +1,7 @@
-<?php
-$host = "localhost";
-$user = "root";
-$password = "";
-$database = "library_system";
-
-$conn = mysqli_connect($host, $user, $password, $database);
-
-if (!$conn) {
-    die("Connection Failed: " . mysqli_connect_error());
-}
-?>
+$conn = new mysqli(
+    getenv('MYSQLHOST'),
+    getenv('MYSQLUSER'),
+    getenv('MYSQLPASSWORD'),
+    getenv('MYSQLDATABASE'),
+    getenv('MYSQLPORT')
+);
