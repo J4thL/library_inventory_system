@@ -1,7 +1,5 @@
-$conn = new mysqli(
-    getenv('MYSQLHOST'),
-    getenv('MYSQLUSER'),
-    getenv('MYSQLPASSWORD'),
-    getenv('MYSQLDATABASE'),
-    getenv('MYSQLPORT')
-);
+<?php
+$SERVER_NAME = getenv('SERVER_NAME');
+$USERNAME = getenv('USERNAME');
+$PASSWORD = getenv('PASSWORD');
+$DB_NAME = getenv('DB_NAME');
